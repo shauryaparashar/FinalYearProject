@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="homemakereq.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<section id="sidebar">
+    <div class="white-label">
+    </div>
+    <div id="sidebar-nav">
+        <ul>
+          <li><a href="../profilescreen/profilecard.html"><i class="fas fa-user-circle""fa fa-desktop"></i>Profile </a></li>
+        <li><a href="../Homeuploadproduct/homeupload.html"><i class="fas fa-upload"></i>Upload a product</a></li>
+        <li><a href="../MakeRequest/homemakereq.html"><i class="fas fa-edit"></i>Request a product</a></li>
+        <li><a href="../requestlist/reqlist.html"><i class="far fa-list-alt"></i>List of requests</a></li>
+        <li><a href="../productlist/productlist.html"><i class="far fa-list-alt"></i>List of products</a></li>
+        </ul>
+    </div>
+</section>
+<section id="content">
+    <div id="header">
+        <div class="header-nav">
+            <div class="menu-button">
+                <!--<i class="fa fa-navicon"></i>-->
+            </div>
+            <div class="nav">
+                <ul>
+                      <li class="nav-settings">
+                      <div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+                  </li>
+                  <li class="nav-mail">
+                        <a href="../userproductlist/userproductlist.html"><div class="font-icon"><i class="fa fa-car" aria-hidden="true"></i></div></a>
+                  </li>
+                  <li class="nav-calendar">
+                        <a href="../Editprofilepage/EditProfile.html"><div class="font-icon"><i class="fas fa-users-cog"></i></div></a>
+                  </li>
+
+                    <li class="nav-profile">
+                        <div class="nav-profile-image">
+                            <img src="pic1.jpg" alt="profile image">
+                            <div class="nav-profile-name">Ria Khare<i class="fa fa-caret-down"></i></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <h1> Post a Request </h1>
+        </div>
+        <div class="widget-box sample-widget">
+            <div class="widget-header">
+            </div>
+            <div class="widget-content">
+
+                <div id="form-main">
+                    <div id="form-div">
+                        <form class="form" id="form1">
+
+                            <div class="category">
+                                <select>
+                                    <option> Select a category </option>
+                                    <option value="Electronics and appliances"> Electronics and appliances </option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Cars and bikes">Cars and bikes</option>
+                                    <option value="Books,Sports and Hobbies">Books,Sports and Hobbies</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <p class="name">
+                                <input name="product" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Enter product name" id="product" />
+                            </p>
+
+                            <div class="dates">
+                                Set requirement period
+                                <p>
+                                    <input name="from" type="date"  id="from" placeholder="From" />
+                                    To
+                                    <input name="to" type="date"  id="to" placeholder="To" />
+                                </p>
+                            </div>
+
+
+                            <p class="price">
+                                <input name="price" type="text" class="validate[required,custom[email]] feedback-input" id="price" placeholder="Set a price" />
+                            </p>
+
+
+                            <div class="submit">
+                                <input type="submit" value="POST" id="button-blue"/>
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+
+            </div>
+        </div>
+
+</section>
+</body>
+</html>
