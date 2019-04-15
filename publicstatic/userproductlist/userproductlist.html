@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="reqlist.css">
+    <link rel="stylesheet" href="../css/productlist.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -33,19 +33,18 @@
             </div>
             <div class="nav">
                 <ul>
-                  <li class="nav-settings">
-                      <div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div>
-                  </li>
-                  <li class="nav-mail">
+                    <li class="nav-settings">
+                        <div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+                    </li>
+                    <li class="nav-mail">
                       <a href="../userproductlist/userproductlist.html"><div class="font-icon"><i class="fa fa-car" aria-hidden="true"></i></div></a>
-                  </li>
-                  <li class="nav-calendar">
+                    </li>
+                    <li class="nav-calendar">
                         <a href="../Editprofilepage/EditProfile.html"><div class="font-icon"><i class="fas fa-users-cog"></i></div></a>
-                  </li>
-
+                    </li>
                     <li class="nav-profile">
                         <div class="nav-profile-image">
-                            <img src="pic1.jpg" alt="profile image">
+                            <img src="../img/pic1.jpg" alt="profile image">
                             <div class="nav-profile-name">Ria Khare<i class="fa fa-caret-down"></i></div>
                         </div>
                     </li>
@@ -55,10 +54,10 @@
     </div>
     <div class="content">
         <div class="content-header">
-
             <form id="searchthis" action="/search" style="display:inline;" method="get">
                 <input id="namanyay-search-box" name="q" size="40" type="text" placeholder="Search"/>
                 <input id="namanyay-search-btn" value="Go" type="submit"/>
+                <h1 id="heading">User's Product List</h1>
             </form>
 
 
@@ -77,51 +76,59 @@
                             <th>ID</th>
                             <th>Added on</th>
                             <th>Product </th>
-                            <th>From    </th>
-                            <th>Upto    </th>
                             <th>Price   </th>
-                            <th>Location</th>
+                            <th>Product Status</th>
                             <th>Product Details</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>22/1/19</td>
                             <td>Drilling machine</td>
-                            <td> 25/1/19</td>
-                            <td>27/1/19</td>
                             <td>Rs. 1000</td>
-                            <td>Civil lines, Kanpur</td>
+                            <td><select>
+                                  <option value="Available">Available</option>
+                                  <option value="Unavailable">Unavailable</option>
+                            </select></td>
                             <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a> </button></td>
+
                         </tr>
+
                         <tr>
                             <td>2</td>
                             <td>22/1/19</td>
                             <td>Hair Dryer</td>
-                            <td>26/1/19</td>
-                            <td>27/1/19</td>
                             <td>Rs. 100</td>
-                            <td>Arya Nagar, Kanpur</td>
+                            <td><select>
+                                  <option value="Available">Available</option>
+                                  <option value="Unavailable">Unavailable</option>
+                            </select></td>
                             <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+
                         </tr>
+
                         <tr>
                             <td>3</td>
                             <td>23/1/19</td>
                             <td>Android phone</td>
-                            <td>29/1/19</td>
-                            <td>2/2/19</td>
                             <td>Rs. 1000</td>
-                            <td>Swaroop Nagar, Kanpur</td>
+                            <td><select>
+                                  <option value="Available">Available</option>
+                                  <option value="Unavailable">Unavailable</option>
+                            </select></td>
                             <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+
                         </tr>
+
                         <tr>
                             <td>4</td>
                             <td>25/1/19</td>
                             <td> Harry potter series books</td>
-                            <td>29/1/19</td>
-                            <td>3/2/19</td>
                             <td>Rs. 1500</td>
-                            <td>Arya Nagar, Kanpur</td>
-                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+                            <td><select>
+                                  <option value="Available">Available</option>
+                                  <option value="Unavailable">Unavailable</option>
+                            </select></td>
+                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a> </button></td>
                         </tr>
 
 
