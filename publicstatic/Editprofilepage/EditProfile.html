@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="../css/EditProfilestyle.css">
+    <link rel="stylesheet" href="EditProfilestyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -35,7 +35,7 @@
                 <ul>
                     <li class="nav-settings">
                       <li class="nav-settings">
-                        <div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+                        <a href="../userrequestpage/userreqlist.html"><div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div></a>
                       </li>
                       <li class="nav-mail">
                         <a href="../userproductlist/userproductlist.html"><div class="font-icon"><i class="fa fa-car" aria-hidden="true"></i></div></a>
@@ -55,30 +55,31 @@
     </div>
     <div class="content">
 
-
             <div class="widget-header">
-
             </div>
+            <form class="" action="../Profilescreen/profilecard1.html" method="post">
+              <div id="profileeditor">
+                <div id="sc-edprofile">
+                  <h1>Edit Profile Form</h1>
+                  <div class="sc-container">
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Email Address" />
+                    <input type="password" placeholder="Password" />
 
-                <div id="profileeditor">
-                  <div id="sc-edprofile">
-                    <h1>Edit Profile Form</h1>
-                    <div class="sc-container">
-                      <input type="text" placeholder="Username" />
-                      <input type="text" placeholder="Email Address" />
-                      <input type="password" placeholder="Password" />
-                      <input type="text" placeholder="First Name" />
-                      <select>
-                        <option value="">Male</option>
-                        <option value="">Female</option>
-                      </select>
-                      <input type="text" placeholder="Facebook Profile URL" />
-                      <input type="text" placeholder="LinkedIn Profile URL" />
-                      <input type="submit" value="Register"/>
-                    </div>
+                    <select>
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                    <span class="btn btn-default btn-file">
+                         <div> <h3>File Upload :</h3> </div>
+                         <input type="file" id="imgInp" value="choose file">
+                    </span>
+                    <input type="submit" value="Register"/>
                   </div>
+                </div>
+          </div>
+            </form>
 
-            </div>
 
 
 </section>

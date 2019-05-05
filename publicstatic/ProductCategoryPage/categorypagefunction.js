@@ -1,13 +1,6 @@
-(function($) {
 
-    var tabs =  $(".tabs li a");
-
-    tabs.click(function() {
-        var content = this.hash.replace('/','');
-        tabs.removeClass("active");
-        $(this).addClass("active");
-        $("#content > aside").hide();
-        $(content).fadeIn(200);
-    });
-
-})(jQuery);
+$('document').ready(function(){
+  document.getElementById('heading').innerHTML=localStorage.getItem('name');
+  document.getElementById('prices').innerHTML="₹"+localStorage.getItem('price');
+  document.getElementById('descriptions').innerHTML="<p>"+localStorage.getItem('description')+"</p>";
+});

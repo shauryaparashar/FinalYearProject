@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="../css/reqlist.css">
+    <link rel="stylesheet" href="reqlist.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="reqlistfunction.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 </head>
 <body>
@@ -34,7 +35,7 @@
             <div class="nav">
                 <ul>
                   <li class="nav-settings">
-                      <div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+                      <a href="../userrequestpage/userreqlist.html"><div class="font-icon"><i class="fa fa-file" aria-hidden="true"></i></div></a>
                   </li>
                   <li class="nav-mail">
                       <a href="../userproductlist/userproductlist.html"><div class="font-icon"><i class="fa fa-car" aria-hidden="true"></i></div></a>
@@ -42,10 +43,9 @@
                   <li class="nav-calendar">
                         <a href="../Editprofilepage/EditProfile.html"><div class="font-icon"><i class="fas fa-users-cog"></i></div></a>
                   </li>
-
                     <li class="nav-profile">
                         <div class="nav-profile-image">
-                            <img src="../img/pic1.jpg" alt="profile image">
+                            <img src="pic1.jpg" alt="profile image">
                             <div class="nav-profile-name">Ria Khare<i class="fa fa-caret-down"></i></div>
                         </div>
                     </li>
@@ -75,56 +75,63 @@
 
                         <tr>
                             <th>ID</th>
-                            <th>Added on</th>
+                            <th>Added By</th>
+                            <th>Added On</th>
                             <th>Product </th>
                             <th>From    </th>
                             <th>Upto    </th>
-                            <th>Price   </th>
+                            <th>Price </th>
                             <th>Location</th>
-                            <th>Product Details</th>
+                            <th>Make Deal</th>
                         </tr>
+
                         <tr>
                             <td>1</td>
+                            <td>Bimal Raghav</td>
                             <td>22/1/19</td>
-                            <td>Drilling machine</td>
+                            <td>Cooking Pan/day</td>
                             <td> 25/1/19</td>
                             <td>27/1/19</td>
-                            <td>Rs. 1000</td>
+                            <td>Rs. 20/day</td>
                             <td>Civil lines, Kanpur</td>
-                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a> </button></td>
+                            <td><button id="a1" class="button4" onclick="changer1();">Send Request</button></td>
                         </tr>
+
                         <tr>
                             <td>2</td>
+                            <td>Rashid Vihari</td>
                             <td>22/1/19</td>
                             <td>Hair Dryer</td>
                             <td>26/1/19</td>
                             <td>27/1/19</td>
-                            <td>Rs. 100</td>
+                            <td>Rs. 80/day</td>
                             <td>Arya Nagar, Kanpur</td>
-                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+                            <td ><button id="a2" class="button4" onclick="changer2();">Send Request</button></td>
                         </tr>
+
                         <tr>
                             <td>3</td>
+                            <td>Shahid vasood</td>
                             <td>23/1/19</td>
                             <td>Android phone</td>
                             <td>29/1/19</td>
                             <td>2/2/19</td>
-                            <td>Rs. 1000</td>
+                            <td>Rs. 1000/day</td>
                             <td>Swaroop Nagar, Kanpur</td>
-                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+                            <td ><button id="a3" class="button4" onclick="changer3();">Send Request</button></td>
                         </tr>
+
                         <tr>
                             <td>4</td>
+                            <td>Anmol Singh</td>
                             <td>25/1/19</td>
                             <td> Harry potter series books</td>
                             <td>29/1/19</td>
                             <td>3/2/19</td>
-                            <td>Rs. 1500</td>
+                            <td>Rs. 15/day</td>
                             <td>Arya Nagar, Kanpur</td>
-                            <td><button class="button4"> <a href="categorypage.html" class="productfeatures">Show Product</a></button></td>
+                            <td ><button id="a4" class="button4" onclick="changer4();" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send Request</button></td>
                         </tr>
-
-
                     </table>
                 </div>
             </div>
