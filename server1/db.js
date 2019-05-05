@@ -1,5 +1,4 @@
 var mysql = require('mysql');
-var body=13;
 
 var dbconfig = {
     host: 'localhost',
